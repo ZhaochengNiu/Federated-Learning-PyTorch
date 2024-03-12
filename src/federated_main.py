@@ -92,7 +92,7 @@ if __name__ == '__main__':
         global_weights = average_weights(local_weights)
 
         # update global weights
-        global_model.load_state_dict(global_weights)
+        global_model.load_stae_dict(global_weights)
 
         loss_avg = sum(local_losses) / len(local_losses)
         train_loss.append(loss_avg)
